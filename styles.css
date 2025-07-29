@@ -32,7 +32,10 @@ body {
 .content {
   background-color: var(--background-content);
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 30px;
+  row-gap: 30px;
 }
 
 .left-sidebar > .sidebar-link-container.dashboard {
@@ -180,15 +183,15 @@ body {
   margin-top: 25px;
   margin-left: 15px;
   margin-right: 15px;
+  grid-row: 1 / 3;
 }
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-auto-rows: auto;
   column-gap: 20px;
   row-gap: 20px;
-  align-self: start;
 }
 
 .card {
@@ -196,7 +199,8 @@ body {
   background-color: white;
   border-radius: 5px;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: auto 1fr auto;
+  row-gap: 12px;
   min-height: auto;
   position: relative;
   overflow: hidden;
@@ -244,6 +248,8 @@ body {
 .announcements {
   display: grid;
   grid-template-rows: auto 1fr;
+  margin-top: 25px;
+  margin-right: 40px;
 }
 
 .project-headings {
@@ -265,6 +271,10 @@ body {
 }
 
 .announcement-content {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: rgb(112, 112, 112);
+}
+
+.trending {
+
 }
