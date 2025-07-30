@@ -313,3 +313,19 @@ body {
   font-size: 0.85rem;
   color: rgb(112, 112, 112);
 }
+
+.icon-container {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+}
+
+.icon-container svg{
+  height: 1rem;
+  width: auto;
+}
+
+.icon-container svg:hover {
+  fill: var(--aqua-blue);
+  cursor: pointer;
+}
